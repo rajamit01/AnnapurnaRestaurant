@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annapurna Cart - Premium Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Enhanced Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-utensils"></i>
+                Annapurna<span>Cart</span>
+            </a>
+            
+            <div class="nav-search">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-input" placeholder="Search for restaurants, dishes..." aria-label="Search">
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#categories"><i class="fas fa-bars"></i> Menu</a></li>
+                <li><a href="#offers"><i class="fas fa-tag"></i> Offers</a></li>
+            </ul>
+            
+            <div class="auth-buttons">
+                <a href="#" class="cart-icon" aria-label="Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">3</span>
+                </a>
+                <button class="btn btn-login">Login</button>
+                <button class="btn btn-signup">Sign Up</button>
+            </div>
+            
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Professional Banner Slider -->
+    <section class="banner-section">
+        <div class="banner-slides">
+            <div class="banner-slide active" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80');">
+                <div class="banner-overlay"></div>
+                <div class="banner-content">
+                    <h2>Delicious Meals Delivered to Your Door</h2>
+                    <p>Experience gourmet dining in the comfort of your home</p>
+                    <a href="#" class="banner-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="banner-slide" style="background-image: url('https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80');">
+                <div class="banner-overlay"></div>
+                <div class="banner-content">
+                    <h2>Family Feast Special</h2>
+                    <p>2 Large Pizzas + Garlic Bread + Soda for only $29.99</p>
+                    <a href="#" class="banner-btn">Get Offer</a>
+                </div>
+            </div>
+            <div class="banner-slide" style="background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80');">
+                <div class="banner-overlay"></div>
+                <div class="banner-content">
+                    <h2>Gourmet Burgers & Fries</h2>
+                    <p>Buy 1 Get 1 Free - Limited Time Only</p>
+                    <a href="#" class="banner-btn">Order Now</a>
+                </div>
+            </div>
+            
+            <div class="banner-prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="banner-next"><i class="fas fa-chevron-right"></i></div>
+        </div>
+        
+        <div class="banner-nav">
+            <div class="banner-dot active"></div>
+            <div class="banner-dot"></div>
+            <div class="banner-dot"></div>
+        </div>
+    </section>
+
+
+
+    <section class="section" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-aos="fade-up">Food Categories</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Explore our wide variety of delicious cuisines</p>
+                <a href="#" class="view-all" data-aos="fade-up" data-aos-delay="200">View All Categories <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="categories">
+                <div class="category-card" data-aos="fade-up" data-aos-delay="0">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&h=600" alt="Pizza" class="category-image">
+                    <div class="category-overlay">
+                        <h3 class="category-name">Pizza</h3>
+                        <div class="category-count">42+ Options</div>
+                    </div>
+                </div>
+                <div class="category-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=800&h=600" alt="Burger" class="category-image">
+                    <div class="category-overlay">
+                        <h3 class="category-name">Burgers</h3>
+                        <div class="category-count">28+ Options</div>
+                    </div>
+                </div>
+                <div class="category-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&h=600" alt="Sushi" class="category-image">
+                    <div class="category-overlay">
+                        <h3 class="category-name">Sushi</h3>
+                        <div class="category-count">35+ Options</div>
+                    </div>
+                </div>
+                <div class="category-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&h=600" alt="Indian" class="category-image">
+                    <div class="category-overlay">
+                        <h3 class="category-name">Indian</h3>
+                        <div class="category-count">38+ Options</div>
+                    </div>
+                </div>
+                <div class="category-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://th.bing.com/th/id/R.4d87d7c22036090c9bdfb5d8e26fdcfa?rik=MdwyzOGJuRyN4Q&riu=http%3a%2f%2fflavorverse.com%2fwp-content%2fuploads%2f2018%2f01%2fGulab-Jamun-Indian-Dessert-Balls.jpg&ehk=nkmITGYb3fKqb4fM%2bOsAwyq%2bF7Mz5zkxb95nz0JX%2fX0%3d&risl=&pid=ImgRaw&r=0" alt="Dessert" class="category-image">
+                    <div class="category-overlay">
+                        <h3 class="category-name">Desserts</h3>
+                        <div class="category-count">24+ Options</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="section" id="restaurants" style="background-color: var(--gray);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-aos="fade-up">Top Restaurants</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Discover the best restaurants in your area</p>
+                <a href="#" class="view-all" data-aos="fade-up" data-aos-delay="200">View All Restaurants <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="restaurants-grid">
+                <div class="restaurant-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card-badge">Popular</div>
+                    <i class="far fa-heart favorite-icon"></i>
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=600&h=300" alt="Pizza Palace" class="card-image">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Pizza Palace</h3>
+                            <div class="rating"><i class="fas fa-star"></i> 4.8</div>
+                        </div>
+                        <div class="card-details">
+                            <span>Italian • Pizza</span>
+                            <span>25-35 min</span>
+                        </div>
+                        <button class="btn-add"><i class="fas fa-utensils"></i> Order Now</button>
+                    </div>
+                </div>
+                <div class="restaurant-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-badge">BOGO Deal</div>
+                    <i class="far fa-heart favorite-icon"></i>
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=600&h=300" alt="Burger Barn" class="card-image">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Burger Barn</h3>
+                            <div class="rating"><i class="fas fa-star"></i> 4.7</div>
+                        </div>
+                        <div class="card-details">
+                            <span>American • Burgers</span>
+                            <span>20-30 min</span>
+                        </div>
+                        <button class="btn-add"><i class="fas fa-utensils"></i> Order Now</button>
+                    </div>
+                </div>
+                <div class="restaurant-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-badge">New</div>
+                    <i class="far fa-heart favorite-icon"></i>
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&h=300" alt="Sushi Sensation" class="card-image">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Sushi Sensation</h3>
+                            <div class="rating"><i class="fas fa-star"></i> 4.9</div>
+                        </div>
+                        <div class="card-details">
+                            <span>Japanese • Sushi</span>
+                            <span>30-40 min</span>
+                        </div>
+                        <button class="btn-add"><i class="fas fa-utensils"></i> Order Now</button>
+                    </div>
+                </div>
+                <div class="restaurant-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-badge">Spicy</div>
+                    <i class="far fa-heart favorite-icon"></i>
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=600&h=300" alt="Spice Garden" class="card-image">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3 class="card-title">Spice Garden</h3>
+                            <div class="rating"><i class="fas fa-star"></i> 4.6</div>
+                        </div>
+                        <div class="card-details">
+                            <span>Indian • Curry</span>
+                            <span>25-35 min</span>
+                        </div>
+                        <button class="btn-add"><i class="fas fa-utensils"></i> Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="section" id="dishes">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-aos="fade-up">Popular Dishes</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Taste our most loved meals</p>
+                <a href="#" class="view-all" data-aos="fade-up" data-aos-delay="200">View Full Menu <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="dishes-grid">
+                <div class="dish-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card-badge">Best Seller</div>
+                    <i class="far fa-heart favorite-icon"></i>
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&h=300" alt="Margherita Pizza" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Margherita Pizza</h3>
+                        <div class="card-details">
+                            <span>Classic cheese pizza</span>
+                        </div>
+                        <div class="price">$12.99</div>
+                        <button class="btn-add"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-badge">New</div>
+                    <i class="far fa-heart favorite-icon"></i>
+                    <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=600&h=300" alt="Classic Burger" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Classic Burger</h3>
+                        <div class="card-details">
+                            <span>Beef patty with veggies</span>
+                        </div>
+                        <div class="price">$9.99</div>
+                        <button class="btn-add"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-badge">Healthy</div>
+                    <i class="far fa-heart favorite-icon"></i>
+                    <img src="https://images.unsplash.com/photo-1546069901-d5bfd2cbfb1f?auto=format&fit=crop&w=600&h=300" alt="Vegetable Sushi" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Vegetable Sushi</h3>
+                        <div class="card-details">
+                            <span>Fresh veggie rolls</span>
+                        </div>
+                        <div class="price">$14.99</div>
+                        <button class="btn-add"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="dish-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-badge">Sweet</div>
+                    <i class="far fa-heart favorite-icon"></i>
+                    <img src="https://images.squarespace-cdn.com/content/v1/62ec1fc995263d65f21175de/ba3f9209-cfa5-4789-ba4a-ebc4f5d050de/German+Chocolate+Cake" alt="Chocolate Cake" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Chocolate Cake</h3>
+                        <div class="card-details">
+                            <span>Rich chocolate dessert</span>
+                        </div>
+                        <div class="price">$6.99</div>
+                        <button class="btn-add"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Today's Offers -->
+    <section class="section" id="offers" style="background-color: var(--gray);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-aos="fade-up">Today's Special Offers</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Limited time deals you can't miss</p>
+            </div>
+            <div class="offers-container" data-aos="fade-up">
+                <div class="offer-content">
+                    <h2 class="offer-title">Family Feast Deal</h2>
+                    <p class="offer-description">Get 2 large pizzas, garlic bread, and a 1.5L soda for just $29.99! Perfect for family dinner.</p>
+                    <button class="btn btn-offer">Grab This Offer</button>
+                </div>
+                <div class="offer-image">
+                    <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9?auto=format&fit=crop&w=500" alt="Family Feast" style="width: 100%;">
+                </div>
+                <div class="offer-pattern"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Reviews Section -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-aos="fade-up" style="color: white;">Customer Reviews</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100" style="color: rgba(255,255,255,0.8);">What our customers say about us</p>
+            </div>
+            
+            <div class="reviews-container">
+                <div class="review-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="review-header">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="review-avatar">
+                        <div class="review-info">
+                            <h4>Sarah Johnson</h4>
+                            <div class="review-role">Regular Customer</div>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"The food arrived hot and fresh, exactly as described. The delivery was faster than expected. Will definitely order again from Annapurna Cart!"</p>
+                    <div class="review-date">Posted: 2 days ago</div>
+                </div>
+                
+                <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="review-header">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="review-avatar">
+                        <div class="review-info">
+                            <h4>Michael Chen</h4>
+                            <div class="review-role">Food Blogger</div>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Excellent service! The sushi was incredibly fresh and delicious. Packaging was secure and eco-friendly. Highly recommend Annapurna Cart!"</p>
+                    <div class="review-date">Posted: 1 week ago</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Annapurna Cart</h3>
+                    <p>Delivering delicious meals right to your doorstep. Fast, fresh, and convenient food delivery service.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Menu</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Offers</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Terms & Conditions</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Careers</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get special offers and updates</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email address" aria-label="Email">
+                        <button class="btn-subscribe">Subscribe</button>
+                    </div>
+                    <div class="app-download">
+                        <h4>Download Our App</h4>
+                        <div style="display: flex; gap: 15px; margin-top: 15px;">
+                            <img src="https://via.placeholder.com/150x50?text=App+Store" alt="App Store" style="border-radius: 10px; cursor: pointer;">
+                            <img src="https://via.placeholder.com/150x50?text=Google+Play" alt="Google Play" style="border-radius: 10px; cursor: pointer;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Annapurna Cart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Chat Support -->
+    <div class="chat-support" aria-label="Chat support">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <!-- Scroll to Top -->
+    <div class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="annupurna.js"></script>
+</body>
+</html>

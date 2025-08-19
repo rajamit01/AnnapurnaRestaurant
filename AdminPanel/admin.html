@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food delivery-admin</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="brand-name">
+              <i class="fas fa-utensils"></i>
+              <h2>Annapurna Cart</h2>
+        </div>
+        
+        <div class="main-content">
+            <span>main</span>
+            <div class="main-content1">
+                <h4>Dashboard</h4>
+            </div>
+        </div>
+        <div class="management">
+            <span>Management</span>
+            <div class="management-content">
+                <div class="restaurant">
+                     <i class="fas fa-store"></i>
+                     <span>Restaurant</span>
+                </div>
+                <div class="menu">
+                     <i class="fas fa-utensil-spoon"></i>
+                     <span>Menu</span>
+                </div>
+                <div class="Users">
+                     <i class="fas fa-users"></i>
+                     <span>Users</span>
+                </div>
+                <div class="Delivery-partner">
+                     <i class="fas fa-motorcycle"></i>
+                     <span>Delivery-partner</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="feedback">
+            <span>feedback</span>
+            <div class="feedback-conent">
+                <i class="fas fa-star"></i>
+                <span>Ratings & Feedback</span>
+            </div>
+        </div>
+
+        <div class="settings">
+            <span>Settings</span>
+            <div class="setting-conent">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </div>
+             <div class="Logout">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </div>
+        </div> <button style="width: 100px;height: 100px;background-color: #fbf8f8;" class="btn" onclick="func1">mode</button>
+    </div>
+   
+</body>
+<script>
+    $("button").click(function(){
+        $(".btn").css('background-color','black');
+    });
+</script>
+</html>
